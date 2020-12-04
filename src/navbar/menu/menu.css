@@ -1,0 +1,17 @@
+.menu {
+  height: 30vh;
+  background-color: #333456;
+  width: 50vw;
+}
+
+.menu > h2 {
+  padding-top: 2vh;
+  padding-left: 2vw;
+  padding-bottom: 2vh;
+  font-size: 4vh;
+  text-align: center;
+}
+
+.menu > h2:hover {
+  background-color: cadetblue;
+}

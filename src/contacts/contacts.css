@@ -1,0 +1,19 @@
+.contacts {
+  background-color: cadetblue;
+  top: 10vh;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts > h2 {
+  font-size: 3vh;
+  text-align: center;
+}
+
+.contacts > button {
+  height: 3vh;
+  font-size: 1.5vh;
+}

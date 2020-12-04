@@ -1,0 +1,16 @@
+.nav {
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+}
+.nav > h1 {
+  font-size: 3vh;
+}
+.nav > button {
+  height: 3vh;
+  margin: 5px;
+  font-size: 20px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}

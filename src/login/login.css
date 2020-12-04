@@ -1,0 +1,39 @@
+.loginpage > h1 {
+  text-align: center;
+  font-size: 5vh;
+  color: cadetblue;
+}
+
+.login-background {
+  background-color: cadetblue;
+  height: 50vh;
+  width: 70vw;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.login-background > form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+}
+
+.login-background > form > input {
+  width: 70%;
+  height: 3vh;
+  font-size: 1.5vh;
+}
+.login-background > form > label {
+  font-size: 2vh;
+}
+.login-background > form > button {
+  height: 3vh;
+  width: 30%;
+  font-size: 1.5vh;
+  align-self: center;
+}

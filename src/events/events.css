@@ -1,0 +1,39 @@
+.events {
+  background-color: cadetblue;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+}
+
+.events > h2 {
+  font-size: 3vh;
+  text-align: center;
+}
+
+.eventsform {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  font-size: 1.5vh;
+}
+
+.eventsform > input {
+  width: 70%;
+  height: 3vh;
+  font-size: 1.5vh;
+}
+.eventsform > label {
+  font-size: 2vh;
+}
+.eventsform > button {
+  height: 3vh;
+  width: 30%;
+  font-size: 1.5vh;
+}
+#description {
+  height: 8vh;
+  width: 70%;
+  font-size: 1.5vh;
+}
