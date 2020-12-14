@@ -1,0 +1,11 @@
+.about > button {
+  height: 3vh;
+  width: 30%;
+  font-size: 1.5vh;
+  align-self: center;
+}
+.about {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}

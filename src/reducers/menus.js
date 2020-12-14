@@ -12,6 +12,7 @@ const slice = createSlice({
     event: false,
     selectedEvent: null,
     invite: false,
+    about: false,
   },
   reducers: {
     mainMenu: (state) => {
@@ -40,6 +41,9 @@ const slice = createSlice({
     inviteMenu: (state) => {
       state.invite = !state.invite;
     },
+    aboutMenu: (state) => {
+      state.about = !state.about;
+    },
   },
 });
 
@@ -53,4 +57,5 @@ export const {
   createAccount,
   selectEvent,
   inviteMenu,
+  aboutMenu,
 } = slice.actions;

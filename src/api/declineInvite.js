@@ -1,27 +1,4 @@
-export function acceptInvite(user, event) {
-  event = { ...event, accepted: [...event.accepted, user] };
-  const fetched = fetch(
-    `https://rsvp-api1.herokuapp.com/api/events/${event.id}`,
-    {
-      method: 'PATCH',
-      mode: 'cors',
-      headers: {
-        'Content-Type': 'application/json',
-        Authorization: localStorage.getItem('rsvp-token'),
-      },
-      body: JSON.stringify(event),
-    }
-  )
-    .then((response) => response.json())
-    .then((data) => {
-      return data;
-    })
-    .catch((error) => {
-      return 'Error';
-    });
-  return fetched;
-}
-export function declineInvite(user, event) {
+function declineInvite(user, event) {
   event = { ...event, declined: [...event.declined, user] };
   if (event.accepted.includes(user)) {
     const updateAccepted = event.invited.map((x) => {
@@ -51,5 +28,5 @@ export function declineInvite(user, event) {
     });
   return fetched;
 }
-module.exports = { acceptInvite };
+
 module.exports = { declineInvite };

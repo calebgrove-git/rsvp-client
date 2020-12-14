@@ -9,10 +9,8 @@ import {
 } from '../../../../../reducers/menus';
 import { changedEvent, addedEvent } from '../../../../../reducers/events';
 import { emailsFetch } from '../../../../../api/emailsFetch';
-import {
-  acceptInvite,
-  declineInvite,
-} from '../../../../../api/acceptOrDecline.js';
+import { acceptInvite } from '../../../../../api/acceptInvite.js';
+import { declineInvite } from '../../../../../api/declineInvite';
 export default function FullIndividualEvent(props) {
   const dispatch = useDispatch();
   const user = useSelector((state) => state.auth.user.id);

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { signIn } from '../reducers/auth';
 import './login.css';
-import { createAccount } from '../reducers/menus';
+import { aboutMenu, createAccount } from '../reducers/menus';
 import { loginFetch } from '../api/loginFetch';
 import { refreshFetch } from '../api/refreshFetch';
 
@@ -68,6 +68,7 @@ export default function Login() {
         <button onClick={() => dispatch(createAccount())}>
           Create Account
         </button>
+        <button onClick={() => dispatch(aboutMenu())}>About</button>
       </div>
     </div>
   );
