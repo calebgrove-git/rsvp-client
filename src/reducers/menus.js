@@ -8,6 +8,10 @@ const slice = createSlice({
     createContact: false,
     day: false,
     selectedDay: null,
+    createAccount: false,
+    event: false,
+    selectedEvent: null,
+    invite: false,
   },
   reducers: {
     mainMenu: (state) => {
@@ -26,6 +30,16 @@ const slice = createSlice({
       state.day = !state.day;
       state.selectedDay = payload;
     },
+    createAccount: (state) => {
+      state.createAccount = !state.createAccount;
+    },
+    selectEvent: (state, { payload }) => {
+      state.event = !state.event;
+      state.selectedEvent = payload;
+    },
+    inviteMenu: (state) => {
+      state.invite = !state.invite;
+    },
   },
 });
 
@@ -36,4 +50,7 @@ export const {
   eventsMenu,
   createContactMenu,
   selectDay,
+  createAccount,
+  selectEvent,
+  inviteMenu,
 } = slice.actions;

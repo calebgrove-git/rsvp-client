@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { contactsMenu, eventsMenu, mainMenu } from '../../reducers/menus';
 import { signOut } from '../../reducers/auth';
 
-export default function Menu(props) {
+export default function Menu() {
   const dispatch = useDispatch();
   function events() {
     dispatch(mainMenu());
@@ -15,6 +15,7 @@ export default function Menu(props) {
     dispatch(contactsMenu());
   }
   function logout() {
+    localStorage.removeItem('rsvp-token');
     dispatch(mainMenu());
     dispatch(signOut());
   }

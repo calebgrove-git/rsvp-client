@@ -1,22 +1,31 @@
 .fullday {
   background-color: cadetblue;
-  margin: 0%;
   padding: 0;
-  justify-content: space-between;
-  display: flex;
   height: 50vh;
   width: 70vw;
   margin: auto;
 }
 
-.fullday > h2 {
+.fullday > .fullday-top > h2 {
   font-size: 3vh;
-  text-align: center;
-  height: 100%;
-  width: 100%;
+  text-align: left;
+  color: white;
 }
 
-.fullday > button {
-  height: 3vh;
+.fullday > .fullday-top > button {
   font-size: 1.5vh;
+  height: 3vh;
+}
+
+.fullday-top {
+  width: 70%;
+  height: 5vh;
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #333;
+}
+.eventbox {
+  padding-top: 5vh;
 }

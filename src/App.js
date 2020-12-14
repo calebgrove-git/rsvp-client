@@ -5,26 +5,27 @@ import LogIn from './login/login';
 import Calendar from './calendar/calendar';
 import Navbar from './navbar/navbar';
 import './app.css';
-import Events from './events/events';
-import Contacts from './contacts/contacts';
-import CreateContact from './createContact/createContact';
+import CreateAccount from './login/create/createAccount';
 
 function App() {
   const menus = useSelector((state) => state.menus);
   const { auth } = useSelector((state) => state);
+  function page() {
+    if (!menus.createAccount) {
+      return <LogIn></LogIn>;
+    }
+    return <CreateAccount></CreateAccount>;
+  }
   return (
     <BrowserRouter>
       {!auth.loggedIn ? (
-        <LogIn></LogIn>
+        page()
       ) : (
         <>
           <Navbar />
           <Calendar />
         </>
       )}
-      {menus.events ? <Events /> : null}
-      {menus.contacts ? <Contacts /> : null}
-      {menus.createContact ? <CreateContact /> : null}
     </BrowserRouter>
   );
 }

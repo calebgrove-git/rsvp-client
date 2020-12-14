@@ -1,9 +1,10 @@
 .calendar {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  height: 90vh;
   grid-gap: 10px;
   background-color: #333;
-  height: 90vh;
+  grid-template-rows: repeat(8, 1fr);
 }
 
 .calendarcontainer > h2 {

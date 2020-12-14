@@ -1,0 +1,10 @@
+.individualevent {
+  height: 100%;
+  width: 100%vw;
+  color: white;
+  background-color: cadetblue;
+  font-size: 2vh;
+  z-index: 100;
+  text-align: center;
+  padding: 2vw;
+}

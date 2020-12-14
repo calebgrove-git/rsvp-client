@@ -1,0 +1,41 @@
+.fullindividualevent {
+  background-color: cadetblue;
+  padding: 0;
+  height: 50vh;
+  width: 70vw;
+  margin: auto;
+}
+
+.fullindividualevent > .fullindividual-top > h2 {
+  font-size: 3vh;
+  text-align: left;
+  color: white;
+}
+
+.fullindividualevent > .fullindividual-top > div > button {
+  font-size: 1.5vh;
+  margin-left: 5px;
+  height: 3vh;
+}
+
+.fullindividual-top {
+  width: 70%;
+  height: 5vh;
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #333;
+}
+.eventdetails {
+  padding-top: 10vh;
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  font-size: 3vh;
+}
+.fullindividualevent > .eventdetails > .accept-decline > button {
+  font-size: 1.5vh;
+  margin-left: 5px;
+  height: 3vh;
+}

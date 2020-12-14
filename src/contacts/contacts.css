@@ -1,19 +1,31 @@
 .contacts {
   background-color: cadetblue;
-  top: 10vh;
+  padding: 0;
+  height: 50vh;
+  width: 70vw;
   margin: auto;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
 }
 
-.contacts > h2 {
+.contacts > .contacts-top > h2 {
   font-size: 3vh;
-  text-align: center;
+  text-align: left;
+  color: white;
 }
 
-.contacts > button {
-  height: 3vh;
+.contacts > .contacts-top > button {
   font-size: 1.5vh;
+  height: 3vh;
+}
+
+.contacts-top {
+  width: 70%;
+  height: 5vh;
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #333;
+}
+.contactslist {
+  padding-top: 5vh;
 }

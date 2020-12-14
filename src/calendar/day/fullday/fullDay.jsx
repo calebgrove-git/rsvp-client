@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { selectDay } from '../../../reducers/menus';
 import Modal from 'react-modal';
 import './fullday.css';
-
+import IndividualEvent from './indivdualevent/individualEvent';
 export default function FullDay(props) {
   const dispatch = useDispatch();
   const modal = useSelector((state) => state.menus);
@@ -27,13 +27,22 @@ export default function FullDay(props) {
           border: 'none',
         },
       }}
-      isOpen={modal.day}
+      isOpen={modal.selectedDay === props.day}
       onRequestClose={toggleModal}
       ariaHideApp={false}
     >
       <div className='fullday'>
-        <h2>Events</h2>
-        <button onClick={toggleModal}>Close</button>
+        <div className='fullday-top'>
+          <h2>Events</h2>
+          <button onClick={toggleModal}>Close</button>
+        </div>
+        <div className='eventbox'>
+          {props.daysEvents.map((event) => {
+            return (
+              <IndividualEvent key={event.id} event={event}></IndividualEvent>
+            );
+          })}
+        </div>
       </div>
     </Modal>
   );

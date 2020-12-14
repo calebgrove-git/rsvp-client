@@ -11,6 +11,7 @@ const slice = createSlice({
       state.loggedIn = true;
     },
     signOut: (state) => {
+      state.user = {};
       state.loggedIn = false;
     },
   },
@@ -18,7 +19,3 @@ const slice = createSlice({
 
 export default slice.reducer;
 export const { signIn, signOut } = slice.actions;
-
-//users
-//events
-//contacts

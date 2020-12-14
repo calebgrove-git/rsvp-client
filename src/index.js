@@ -7,10 +7,13 @@ import App from './App';
 
 import authReducer from './reducers/auth';
 import menuReducer from './reducers/menus';
-
+import eventsReducer from './reducers/events';
+import contactsReducer from './reducers/contacts';
 const reducer = combineReducers({
   auth: authReducer,
   menus: menuReducer,
+  events: eventsReducer,
+  contacts: contactsReducer,
 });
 
 const store = configureStore({
