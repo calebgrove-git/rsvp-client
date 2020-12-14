@@ -47,7 +47,7 @@ export default function Calendar() {
     let today = new Date();
     setYear(today.getFullYear());
     setMonth(today.getMonth() + 1);
-  }, [user, dispatch, added, contactAdded, menus.contacts]);
+  }, [user, dispatch, added, contactAdded, menus.contacts, allEvents.added]);
   useEffect(() => {
     setDays(getDaysInMonth(month, year));
   }, [month, year]);

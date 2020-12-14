@@ -1,4 +1,4 @@
-function acceptInvite(user, event) {
+export function acceptInvite(user, event) {
   event = { ...event, accepted: [...event.accepted, user] };
   const fetched = fetch(
     `https://rsvp-api1.herokuapp.com/api/events/${event.id}`,
@@ -21,5 +21,3 @@ function acceptInvite(user, event) {
     });
   return fetched;
 }
-
-module.exports = { acceptInvite };
