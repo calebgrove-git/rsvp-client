@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { signIn } from '../reducers/auth';
 import './login.css';
 import { createAccount } from '../reducers/menus';
 import { loginFetch } from '../api/loginFetch';
 import { refreshFetch } from '../api/refreshFetch';
-import { createEvent } from '@testing-library/react';
 
 export default function Login() {
   const dispatch = useDispatch();
-  const menus = useSelector((state) => state.menus);
   const [formInput, setFormInput] = useState({
     email: '',
     password: '',
@@ -17,7 +15,6 @@ export default function Login() {
   useEffect(() => {
     async function handleRefresh() {
       if (localStorage.getItem('rsvp-token')) {
-        console.log('something');
         const user = await refreshFetch(localStorage.getItem('rsvp-token'));
         dispatch(signIn(user));
       } else return;

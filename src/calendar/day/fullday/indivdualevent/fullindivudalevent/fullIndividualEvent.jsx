@@ -12,7 +12,7 @@ import { emailsFetch } from '../../../../../api/emailsFetch';
 import {
   acceptInvite,
   declineInvite,
-} from '../../../../../api/acceptOrDecline';
+} from '../../../../../api/acceptOrDecline.js';
 export default function FullIndividualEvent(props) {
   const dispatch = useDispatch();
   const user = useSelector((state) => state.auth.user.id);
