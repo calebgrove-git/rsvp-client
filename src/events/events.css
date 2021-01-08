@@ -1,5 +1,6 @@
 .events {
-  background-color: cadetblue;
+  background-color: #333;
+  color: rgba(237, 238, 255);
   margin: auto;
   height: 100%;
   width: 100%;
@@ -8,6 +9,7 @@
 .events > h2 {
   font-size: 3vh;
   text-align: center;
+  font-weight: 300;
 }
 
 .eventsform {
@@ -17,15 +19,18 @@
   text-align: center;
   align-items: center;
   font-size: 1.5vh;
+  font-weight: 300;
 }
 
 .eventsform > input {
   width: 70%;
   height: 3vh;
   font-size: 1.5vh;
+  font-weight: 300;
 }
 .eventsform > label {
   font-size: 2vh;
+  font-weight: 300;
 }
 .eventsform > button {
   height: 3vh;
@@ -36,4 +41,45 @@
   height: 8vh;
   width: 70%;
   font-size: 1.5vh;
+}
+
+.eventsform > button {
+  background-color: transparent;
+  text-decoration: none;
+  border: 1px solid rgba(237, 238, 255);
+  position: relative;
+  overflow: hidden;
+  font-size: 1.5vh;
+  padding: 5px;
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-bottom: 1vh;
+  color: rgba(237, 238, 255);
+  font-weight: 300;
+  height: 4vh;
+  width: 10vw;
+}
+
+.eventsform > button:hover {
+  box-shadow: 1px 1px 15px 5px rgba(237, 238, 255, 0.4);
+}
+
+.eventsform > button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(237, 238, 255, 0.4),
+    transparent
+  );
+  transition: all 650ms;
+}
+
+.eventsform > button:hover:before {
+  left: 100%;
 }

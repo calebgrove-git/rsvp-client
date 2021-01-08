@@ -2,9 +2,13 @@
   height: 100%;
   width: 100%vw;
   color: white;
-  background-color: cadetblue;
+  background-color: #333;
   font-size: 2vh;
   z-index: 100;
   text-align: center;
   padding: 2vw;
+}
+
+.individualevent > h1 {
+  font-weight: 300;
 }

@@ -1,15 +1,16 @@
 .contacts {
-  background-color: cadetblue;
+  background-color: #333;
   padding: 0;
   height: 50vh;
   width: 70vw;
   margin: auto;
+  color: rgba(237, 238, 255);
 }
 
 .contacts > .contacts-top > h2 {
   font-size: 3vh;
   text-align: left;
-  color: white;
+  font-weight: 300;
 }
 
 .contacts > .contacts-top > button {
@@ -28,4 +29,44 @@
 }
 .contactslist {
   padding-top: 5vh;
+}
+.contacts > .contacts-top > button {
+  background-color: transparent;
+  text-decoration: none;
+  border: 1px solid rgba(237, 238, 255);
+  position: relative;
+  overflow: hidden;
+  font-size: 1.5vh;
+  padding: 5px;
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-bottom: 1vh;
+  color: rgba(237, 238, 255);
+  font-weight: 300;
+  height: 4vh;
+  width: 10vw;
+}
+
+.contacts > .contacts-top > button:hover {
+  box-shadow: 1px 1px 15px 5px rgba(237, 238, 255, 0.4);
+}
+
+.contacts > .contacts-top > button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(237, 238, 255, 0.4),
+    transparent
+  );
+  transition: all 650ms;
+}
+
+.contacts > .contacts-top > button:hover:before {
+  left: 100%;
 }

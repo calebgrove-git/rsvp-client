@@ -14,7 +14,9 @@ export default function Navbar() {
   return (
     <div className='nav'>
       <h1>RSVP</h1>
-      <button onClick={toggleModal}>Menu</button>
+      <button className='menu' onClick={toggleModal}>
+        Menu
+      </button>
       <Modal
         isOpen={modal.main}
         onRequestClose={toggleModal}

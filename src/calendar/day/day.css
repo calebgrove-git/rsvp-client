@@ -1,4 +1,503 @@
-.day {
-  height: 90%;
-  background-color: #fff;
+.day.month1 {
+  height: 100%;
+  background: url('../../images/jan2.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: black;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+.day.month1:nth-child(3n + 4) {
+  height: 100%;
+  background: url('../../images/jan1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+.day.month1:nth-child(5n + 0) {
+  height: 100%;
+  background: url('../../images/jan1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+.day.month2 {
+  height: 100%;
+  background: url('../../images/feb2.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: black;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+.day.month2:nth-child(3n + 4) {
+  height: 100%;
+  background: url('../../images/feb1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+.day.month2:nth-child(5n + 0) {
+  height: 100%;
+  background: url('../../images/feb1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+.day.month3 {
+  height: 100%;
+  background: url('../../images/mar2.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: black;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+.day.month3:nth-child(3n + 4) {
+  height: 100%;
+  background: url('../../images/mar1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+.day.month3:nth-child(5n + 0) {
+  height: 100%;
+  background: url('../../images/mar1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+.day.month4 {
+  height: 100%;
+  background: url('../../images/apr2.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: black;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+.day.month4:nth-child(3n + 4) {
+  height: 100%;
+  background: url('../../images/apr1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+.day.month4:nth-child(5n + 0) {
+  height: 100%;
+  background: url('../../images/apr1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+.day.month5 {
+  height: 100%;
+  background: url('../../images/may2.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: black;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+.day.month5:nth-child(3n + 4) {
+  height: 100%;
+  background: url('../../images/may1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+.day.month5:nth-child(5n + 0) {
+  height: 100%;
+  background: url('../../images/may1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+.day.month6 {
+  height: 100%;
+  background: url('../../images/jun2.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: black;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+.day.month6:nth-child(3n + 4) {
+  height: 100%;
+  background: url('../../images/jun1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+.day.month6:nth-child(5n + 0) {
+  height: 100%;
+  background: url('../../images/jun1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+.day.month7 {
+  height: 100%;
+  background: url('../../images/jul2.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: black;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+.day.month7:nth-child(3n + 4) {
+  height: 100%;
+  background: url('../../images/jul1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+.day.month7:nth-child(5n + 0) {
+  height: 100%;
+  background: url('../../images/jul1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+.day.month8 {
+  height: 100%;
+  background: url('../../images/aug2.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: black;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+.day.month8:nth-child(3n + 4) {
+  height: 100%;
+  background: url('../../images/aug1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+.day.month8:nth-child(5n + 0) {
+  height: 100%;
+  background: url('../../images/aug1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+.day.month9 {
+  height: 100%;
+  background: url('../../images/sep2.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: black;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+.day.month9:nth-child(3n + 4) {
+  height: 100%;
+  background: url('../../images/sep1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+.day.month9:nth-child(5n + 0) {
+  height: 100%;
+  background: url('../../images/sep1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+.day.month10 {
+  height: 100%;
+  background: url('../../images/oct2.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: black;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+.day.month10:nth-child(3n + 4) {
+  height: 100%;
+  background: url('../../images/oct1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+.day.month10:nth-child(5n + 0) {
+  height: 100%;
+  background: url('../../images/oct1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+.day.month11 {
+  height: 100%;
+  background: url('../../images/nov2.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: black;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+.day.month11:nth-child(3n + 4) {
+  height: 100%;
+  background: url('../../images/nov1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+.day.month11:nth-child(5n + 0) {
+  height: 100%;
+  background: url('../../images/nov1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+.day.month12 {
+  height: 100%;
+  background: url('../../images/dec2.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: black;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+.day.month12:nth-child(3n + 4) {
+  height: 100%;
+  background: url('../../images/dec1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+.day.month12:nth-child(5n + 0) {
+  height: 100%;
+  background: url('../../images/dec1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  font-size: 1.5vh;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1000px) {
+  .day.month1 {
+    background-position: center;
+  }
+
+  .day.month1:nth-child(3n + 4) {
+    background-position: center;
+  }
+
+  .day.month1:nth-child(5n + 0) {
+    background-position: center;
+  }
+
+  .day.month2 {
+    background-position: center;
+  }
+
+  .day.month2:nth-child(3n + 4) {
+    background-position: center;
+  }
+
+  .day.month2:nth-child(5n + 0) {
+    background-position: center;
+  }
+
+  .day.month3 {
+    background-position: center;
+  }
+
+  .day.month3:nth-child(3n + 4) {
+    background-position: center;
+  }
+
+  .day.month3:nth-child(5n + 0) {
+    background-position: center;
+  }
+
+  .day.month4 {
+    background-position: center;
+  }
+
+  .day.month4:nth-child(3n + 4) {
+    background-position: center;
+  }
+
+  .day.month4:nth-child(5n + 0) {
+    background-position: center;
+  }
+
+  .day.month5 {
+    background-position: center;
+  }
+
+  .day.month5:nth-child(3n + 4) {
+    background-position: center;
+  }
+
+  .day.month5:nth-child(5n + 0) {
+    background-position: center;
+  }
+
+  .day.month6 {
+    background-position: center;
+  }
+
+  .day.month6:nth-child(3n + 4) {
+    background-position: center;
+  }
+
+  .day.month6:nth-child(5n + 0) {
+    background-position: center;
+  }
+
+  .day.month7 {
+    background-position: center;
+  }
+
+  .day.month7:nth-child(3n + 4) {
+    background-position: center;
+  }
+
+  .day.month7:nth-child(5n + 0) {
+    background-position: center;
+  }
+
+  .day.month8 {
+    background-position: center;
+  }
+
+  .day.month8:nth-child(3n + 4) {
+    background-position: center;
+  }
+
+  .day.month8:nth-child(5n + 0) {
+    background-position: center;
+  }
+
+  .day.month9 {
+    background-position: center;
+  }
+
+  .day.month9:nth-child(3n + 4) {
+    background-position: center;
+  }
+
+  .day.month9:nth-child(5n + 0) {
+    background-position: center;
+  }
+
+  .day.month10 {
+    background-position: center;
+  }
+
+  .day.month10:nth-child(3n + 4) {
+    background-position: center;
+  }
+
+  .day.month10:nth-child(5n + 0) {
+    background-position: center;
+  }
+
+  .day.month11 {
+    background-position: center;
+  }
+
+  .day.month11:nth-child(3n + 4) {
+    background-position: center;
+  }
+
+  .day.month11:nth-child(5n + 0) {
+    background-position: center;
+  }
+  .day.month12 {
+    background-position: center;
+  }
+
+  .day.month12:nth-child(3n + 4) {
+    background-position: center;
+  }
+
+  .day.month12:nth-child(5n + 0) {
+    background-position: center;
+  }
 }

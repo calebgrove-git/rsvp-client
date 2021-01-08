@@ -1,5 +1,5 @@
 .fullindividualevent {
-  background-color: cadetblue;
+  background-color: #333;
   padding: 0;
   height: 50vh;
   width: 70vw;
@@ -10,6 +10,7 @@
   font-size: 3vh;
   text-align: left;
   color: white;
+  font-weight: 300;
 }
 
 .fullindividualevent > .fullindividual-top > div > button {
@@ -33,9 +34,44 @@
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   font-size: 3vh;
+  color: white;
 }
 .fullindividualevent > .eventdetails > .accept-decline > button {
   font-size: 1.5vh;
   margin-left: 5px;
   height: 3vh;
+}
+.fullindividualevent > .fullindividual-top > div > button {
+  background-color: transparent;
+  text-decoration: none;
+  border: 1px solid rgba(237, 238, 255);
+  position: relative;
+  overflow: hidden;
+  font-size: 1.5vh;
+  padding: 5px;
+  margin-bottom: 1vh;
+  color: rgba(237, 238, 255);
+  font-weight: 300;
+}
+
+.fullindividualevent > .fullindividual-top > div > button:hover {
+  box-shadow: 1px 1px 15px 5px rgba(237, 238, 255, 0.4);
+}
+.fullindividualevent > .fullindividual-top > div > button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(237, 238, 255, 0.4),
+    transparent
+  );
+  transition: all 650ms;
+}
+.fullindividualevent > .fullindividual-top > div > button:hover:before {
+  left: 100%;
 }

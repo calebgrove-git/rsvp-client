@@ -54,17 +54,27 @@ export default function Calendar() {
   return (
     <div className='calendarcontainer'>
       <h2 className='year'>
-        <button onClick={() => setYear(year - 1)}>-</button>
+        <button className='calButton' onClick={() => setYear(year - 1)}>
+          Previous Year
+        </button>
         {year.toString()}
-        <button onClick={() => setYear(year + 1)}>+</button>
+        <button className='calButton' onClick={() => setYear(year + 1)}>
+          Next Year
+        </button>
       </h2>
       <h2 className='month'>
-        <button onClick={() => previousMonth(setYear, year, setMonth, month)}>
-          -
+        <button
+          className='calButton'
+          onClick={() => previousMonth(setYear, year, setMonth, month)}
+        >
+          Previous Month
         </button>
         {findMonth(month)}
-        <button onClick={() => nextMonth(setYear, year, setMonth, month)}>
-          +
+        <button
+          className='calButton'
+          onClick={() => nextMonth(setYear, year, setMonth, month)}
+        >
+          Next Month
         </button>
       </h2>
       <div className='calendar'>

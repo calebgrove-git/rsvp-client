@@ -44,10 +44,11 @@ export default function Day(props) {
     }
 
     setDaysEvents(eventsArr);
-  }, [props.events, date]);
+  }, [props.events, date, user]);
+  const classes = `day month${props.month}`;
   return (
     <>
-      <div className='day' onClick={selectThisDay}>
+      <div className={classes} onClick={selectThisDay}>
         {props.day}
         <br></br>
         {daysEvents.map((event) => {

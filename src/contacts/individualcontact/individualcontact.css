@@ -2,3 +2,36 @@
   font-size: 1.5vh;
   height: 3vh;
 }
+.individualevent > button {
+  background-color: transparent;
+  text-decoration: none;
+  border: 1px solid rgba(237, 238, 255);
+  position: relative;
+  overflow: hidden;
+  font-size: 1.5vh;
+  padding: 5px;
+  margin-bottom: 1vh;
+  color: rgba(237, 238, 255);
+  font-weight: 300;
+}
+.individualevent > button:hover {
+  box-shadow: 1px 1px 15px 5px rgba(237, 238, 255, 0.4);
+}
+.individualevent > button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(237, 238, 255, 0.4),
+    transparent
+  );
+  transition: all 650ms;
+}
+.individualevent > button:hover:before {
+  left: 100%;
+}

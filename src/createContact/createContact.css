@@ -1,5 +1,6 @@
 .createcontact {
-  background-color: cadetblue;
+  background-color: #333;
+  color: rgba(237, 238, 255);
   height: 100%;
   width: 100%;
   margin: auto;
@@ -8,6 +9,7 @@
 .createcontact > h2 {
   font-size: 3vh;
   text-align: center;
+  font-weight: 300;
 }
 
 .contactform {
@@ -23,12 +25,54 @@
   width: 70%;
   height: 3vh;
   font-size: 1.5vh;
+  font-weight: 300;
 }
 .contactform > label {
   font-size: 2vh;
+  font-weight: 300;
 }
 .contactform > button {
   height: 3vh;
   width: 30%;
   font-size: 1.5vh;
+}
+.contactform > button {
+  background-color: transparent;
+  text-decoration: none;
+  border: 1px solid rgba(237, 238, 255);
+  position: relative;
+  overflow: hidden;
+  font-size: 1.5vh;
+  padding: 5px;
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-bottom: 1vh;
+  color: rgba(237, 238, 255);
+  font-weight: 300;
+  height: 4vh;
+  width: 10vw;
+}
+
+.contactform > button:hover {
+  box-shadow: 1px 1px 15px 5px rgba(237, 238, 255, 0.4);
+}
+
+.contactform > button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(237, 238, 255, 0.4),
+    transparent
+  );
+  transition: all 650ms;
+}
+
+.contactform > button:hover:before {
+  left: 100%;
 }
